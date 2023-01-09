@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Creating MyPortfolio
+    </title>
+
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1333px)" href="portfoliophone.css"> -->
+
+    <!-- putting font styles from google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="items"><a href="#home"><strong>Home</strong></a></li>
+            <li class="items"><a href="#Aboutme"><strong>About Me</strong></a></li>
+            <li class="items"><a href="#myeducation"> <strong>My Qualifications</strong> </a></li>
+            <li class="items"><a href="#myprojects"><strong> My Projects</strong></a></li>
+            <li class="items"><a href="#HireMe"><Strong>Hire Me</Strong></a></li>
+            <li class="items"><a href="#mycontact"><Strong>Contact Us</Strong></a></li>
+        </ul>
+    </nav>
+    <div class="scrollbox">
+        <section id="home">
+            <h2> My Portfolio</h2>
+            <p> OBJECTIVE : To grab the new and challenging opportunities where I can show
+                and enhance my skills and give my best to the technical field .
+            </p>
+            <div id="launcher">
+                <button id="launched">
+                    <img src="launch.png" alt="MyPortfolio.com">
+                </button>
+                <script>
+                    function scrollfun7() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        }
+                        );
+                    }
+                    document.getElementById("launched").addEventListener("click", scrollfun7);
+                </script>
+            </div>
+        </section>
+        <section id="Aboutme">
+            <h2>About Me </h2>
+            <div class="mydetails">
+                <h3> <span> Name :- </span> Pankaj Singh </h3>
+                <h3> <span> Age :- </span> 20 </h3>
+                <h3> <span> Qualifications :- </span> B.Tech In Computer Science </h3>
+                <h3> <span> Post :- </span> Student </h3>
+                <h3> <span> Hobbies :- </span> Doing Coding, Playing Basketball
+                    , Dancing ,Playing Casio ,Listening to Music
+                </h3>
+                <h3> <span> Programming Languages :- </span> C Programming , C++ , Python ,
+                    Java , CSS , SQL ,MySQL.
+                </h3>
+            </div>
+            <button class="btn" id="btn3" onClick="window.open ('viewCv.html','mywindow');"><Strong>See My Cv</Strong>
+            </button>
+            <a href="pankajCv.pdf" download="PankajCV"> <button class="btn" id="btn4"><Strong>Download Cv
+                        <img id="cvdownload" src="download.png" alt="MyPortfolio.com">
+                    </Strong> </button></a>
+        </section>
+
+        <section id="myeducation">
+            <h2> My Qualifications </h2>
+            <div id="qualifications">
+                <div id="class10th" class="blur">
+                    <div class="image_and_heading">
+                        <img src="scholarship.png" alt="MyPortfolio.com" class="qualification_image">
+                        <h3>High School (HHC)</h3>
+                    </div>
+                    <h3> <span> School :- </span> Queen's Senior Sec Public School</h3>
+                    <h3> <span> Year :- </span> 2017-2018</h3>
+                    <h3> <span> Percentage :- </span> 78.8% </h3>
+                    <button class="btn btn5" id="btn5" onClick="window.open ('viewclass10thmarks.html','mywindow');">
+                        <Strong>Veiw Marks</Strong>
+                    </button>
+                </div>
+                <div id="class12th" class="blur">
+                    <div class="image_and_heading">
+                        <img src="scholarship.png" alt="MyPortfolio.com" class="qualification_image">
+                        <h3>Secondary School (SSC)</h3>
+                    </div>
+                    <h3> <span> School :- </span> Queen's Senior Sec Public School</h3>
+                    <h3> <span> Year :- </span> 2019-2020</h3>
+                    <h3> <span> Percentage :- </span> 88.8% </h3>
+                    <button class="btn btn5" class="btn5" onClick="window.open ('viewclass12marks.html','mywindow');">
+                        <Strong>Veiw Marks</Strong>
+                    </button>
+                </div>
+                <div id="college" class="blur">
+                    <div class="image_and_heading">
+                        <img src="scholarship.png" alt="MyPortfolio.com" class="qualification_image">
+                        <h3>B.Tech In Computer Science</h3>
+                    </div>
+                    <h3> <span> University :- </span> Lovely Professional University</h3>
+                    <h3> <span> Year :- </span> 2020- present</h3>
+                    <h3> <span> Current CGPA :- </span> 8.38 CGPA </h3>
+                    <button class="btn btn5" onClick="window.open ('Mycgpa.html','mywindow');">
+                        <Strong>Veiw Grades</Strong>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="myprojects">
+            <h2> My Projects </h2>
+            <div class="projects projectblur">
+                <div class="project-list">
+                    <div class="proj proj1">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>Simple Music Player System</h3>
+                        <p>In this project I have used the GUI using Tkinter library .This
+                            project contains the combination of many other projects like
+                            MP3 audio downloader ,online video player, automatically what's
+                            app message sender . This project also contain the audio player
+                            with various control functionality like :- play button ,volume up and down etc.
+                        </p>
+                        <button class="btn btn6"
+                            onclick="window.open('https://github.com/Pankaj20202024/Amazing-music-player-system.github.io')">
+                            Veiw Project1
+                        </button>
+                    </div>
+                    <div class="proj proj4">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>Property website</h3>
+                        <p> My property website contains total 50 pages.I have Maken
+                            many forms.Thier are many more nice feature that I have included in my
+                            property website .At last in my property website I have included the
+                            searching functionality according to the budget,location and
+                            type of property.
+                        </p>
+                        <button class="btn btn9"
+                            onclick="window.open(' https://pankaj20202024.github.io/Property-website.github.io/')">
+                            Veiw Project4
+                        </button>
+                    </div>
+
+                    <div class="proj proj4">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>E-commerce website</h3>
+                        <p> In my website I have created so many containers like TopCategory,TopBrand,ShopByCategory and
+                            their are many more containers. Inside those container I have created a many option for
+                            shopping and we can switch from one option to another to another without reloading the url
+                            of main website using javascript.
+                            It consist of more than 4550 lines of javascript and 11000 lines of HTML , 3000 lines of
+                            CSS.
+                        </p>
+                        <button class="btn btn14"
+                            onclick="window.open('https://pankaj20202024.github.io/e-commerce-website.github.io/')">
+                            Veiw Project7
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="project-list">
+                    <div class="proj proj2">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>Amazing Typing Speed Game</h3>
+                        <p>In this project I have used the GUI , In this project I have included
+                            the gif which makes the project more attractive and thier are
+                            many more functionality that I have included in my project .
+                        </p>
+                        <button class="btn btn7"
+                            onclick="window.open('https://github.com/Pankaj20202024/Amazing-typing-speed-game.github.io')">
+                            Veiw Project2
+                        </button>
+                    </div>
+                    <div class="proj proj10">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>outlook of the gym websit</h3>
+                        <p>In this project I have created the outlook of the gym website.</p>
+                        <button class="btn btn10"
+                            onclick="window.open('https://pankaj20202024.github.io/Gym-website-github.io/')">
+                            Veiw Project5
+                        </button>
+                    </div>
+
+                    <div class="proj proj10">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>Spotify Clone</h3>
+                        <p>In this project I have Created the clone of Spotify using html , css , javascript.</p>
+                        <button class="btn btn15"
+                            onclick="window.open('https://pankaj20202024.github.io/music-player-system.github.io/')">
+                            Veiw Project8
+                        </button>
+                    </div>
+
+                </div>
+                <div class="project-list" id="projectedit">
+                    <div class="proj">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3>Amazing Voice ChatBot</h3>
+                        <p>In this project I have used the GUI , And I have included gif of
+                            ChatBot . In this chatbot we can see the text of our conversation
+                            with Alexa (ChatBot ).
+                        </p>
+                        <button class="btn btn8"
+                            onclick="window.open('https://github.com/Pankaj20202024/Amazing-chatbot.github.io')">
+                            Veiw Project3
+                        </button>
+                    </div>
+                    <div class="proj proj3" id="editproject">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3> Online Food Delivery website</h3>
+                        <p>In this project I have created the Online Food Delivery website .
+                            This website is completely responsive.
+                        </p>
+                        <button class="btn btn11"
+                            onclick="window.open('https://pankaj20202024.github.io/Food-delivery-website.github.io/')">
+                            Veiw Project6
+                        </button>
+                    </div>
+
+                    <div class="proj proj3" id="editproject">
+                        <img src="projectimg.png" alt="MyPortfolio.com" class="proj_image">
+                        <h3> Kumaoni Song dowloader</h3>
+                        <p>In this repository I have created the kumoani song website this website contains the old
+                            songs , new song for free download and in this website contains meta query and can resize it
+                            self according the devices 
+                        </p>
+                        <button class="btn btn16"
+                            onclick="window.open('https://pankaj20202024.github.io/kumaoni-song-website.github.io/')">
+                            Veiw Project9
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="HireMe">
+            <h2>Hire Me </h2>
+            <form id="hire" action="backend.php">
+                <input type="text" name="sendername" id="Name" placeholder="Enter Your Name">
+                <input type="email" name="senderemail" id="Email" placeholder="Enter Your Email">
+                <input type="text" name="hired_project" id="Project" placeholder="Enter Your Project">
+                <input type="number" placeholder="Enter Your Mobile Number">
+                <textarea name="requirements" id="Requirements" cols="30" rows="10"
+                    placeholder="Enter Your Project Requirements"></textarea>
+                <button class="btn btn12">
+                    Send
+                </button>
+                <button class="btn btn13">
+                    Reset
+                </button>
+            </form>
+        </section>
+
+        <section id="mycontact">
+            <h2>Contact Me</h2>
+            <div class="contact">
+                <img src="email.png" alt="MyPortfolio.com">
+                <h3> pankajsr412@gmail.com</h3>
+            </div>
+            <div class="contact">
+                <img src="call.png" alt="MyPortfolio.com">
+                <h3> 8449944024</h3>
+            </div>
+            <div class="contact">
+                <img src="location.png" alt="MyPortfolio.com">
+                <h3> purvi udaipur, Golapar, Haldwani, Nainital, Uttarakhand</h3>
+            </div>
+            <div class="connect">
+                <img class="connection" src="facebook1.png" alt="MyPortfolio.com" usemap="#workmap1">
+                <map name="workmap1">
+                    <area shape="default" href="https://www.facebook.com/pankajsingh.raikwal.3/"
+                        alt="image is not available" target="_blank">
+                </map>
+                <img class="connection" src="linkedin1.png" alt="MyPortfolio.com" usemap="#workmap2">
+                <map name="workmap2">
+                    <area shape="default" href="https://www.linkedin.com/in/pankaj-singh-7832151bb/"
+                        alt="image is not available" target="_blank">
+                </map>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                Copyright &copy; MyPortfolio.com. All rights reserved
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
